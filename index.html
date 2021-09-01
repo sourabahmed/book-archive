@@ -7,14 +7,33 @@
     <title>Book Archive</title>
     <!-- bootstrap css added -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        .image{
+            height: 400px;
+            width:auto
+        }
+    </style>
 </head>
-<body>
+<body class="container">
     <!-- search field -->
     <header>
-        <div class="input-group mb-3 container p-5 ">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-danger" type="button" id="button-addon2">Button</button>
-          </div>
+        <h1 class="text-center text-success pt-4">Search your Book name</h1>
+        <div class="input-group mb-3 p-5 ">
+            <input id="search-input" type="text" class="form-control" placeholder="Search Book" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-danger" type="button" id="search-button">Button</button>
+        </div>
+            <!-- total result of search -->
+            <div id="total-result" class="mb-3">
+                
+            </div>
+            <!-- book details in card section -->
+        <section>
+            <div id="add-element" class="row row-cols-1 row-cols-md-3 g-4">
+                
+              </div>
+        </section>
     </header>
+    <!-- js added -->
+    <script src="js/book.js"></script>
 </body>
 </html>
